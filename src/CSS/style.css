@@ -26,9 +26,10 @@ img {
 .container {
   display: flex;
 
-
+  max-height: fit-content;
   font-family: 'Inter', sans-serif;
   background-color: var(--white);
+  flex-direction: column;
 }
 
 header {
@@ -37,6 +38,7 @@ header {
   align-items: center;
   height: 5rem;
   padding: 20px;
+  width: 100%;
 }
 
 header p {
@@ -56,13 +58,19 @@ header li {
 
 header a {
   text-decoration: none;
-
-
+  float: right;
+  color: #2a292f; 
+  text-align: center;
+  padding: 14px 16px;
   font-size: 2rem;
+  display:flex;
+  justify-content: right;
 }
 
 header a:hover {
   text-decoration: underline;
+  background-color: #ddd;
+  color: black;
 }
 
 main {
@@ -128,10 +136,12 @@ main {
 }
 
 footer {
-  height: 5rem;
   display: flex;
   justify-content: center;
-}
+  align-items: center;
+  bottom: 0;
+  margin-top: auto;
+  }
 
 footer p {
   font-weight: 500;
