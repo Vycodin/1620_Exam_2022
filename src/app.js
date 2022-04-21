@@ -53,10 +53,15 @@ const contactsList = [
 const all_contacts = document.querySelector('#display_all_contacts')
 const disp_single_contact = document.querySelector('#display_single_contact')
 const close_contact_button = "<button class='close_contact'>x</button>"
-const contact_div = '<div id="individual_contact"></div>'
+const contact_div = '<div></div>'
 function loadcontacts(evt){
   console.log(all_contacts)
+  for (var contact of contactsList){
   all_contacts.insertAdjacentHTML('afterbegin', contact_div)
+  unique_contact_div = document.querySelector('div')
+  const name = contact.name
+  var img = contact.image
+  }
 
 }
 
