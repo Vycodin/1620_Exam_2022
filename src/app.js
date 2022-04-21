@@ -64,7 +64,7 @@ function loadcontacts(evt){
   unique_contact_div.insertAdjacentHTML('afterbegin', img)
   unique_contact_div.insertAdjacentHTML('beforeend', name)
   }
-
+all_contacts.addEventListener('click', function(evt){displaysinglecontact(evt)})
 }
 
 
