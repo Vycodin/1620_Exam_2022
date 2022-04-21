@@ -64,9 +64,12 @@ function loadcontacts(evt){
   unique_contact_div.insertAdjacentHTML('afterbegin', img)
   unique_contact_div.insertAdjacentHTML('beforeend', name)
   }
-all_contacts.addEventListener('click', function(evt){displaysinglecontact(evt)})
+all_contacts.addEventListener('click', function(){displaysinglecontact(evt)})
 }
 
+function displaysinglecontact(evt){
+  console.log('event delegation is hard')
+}
 
 
 

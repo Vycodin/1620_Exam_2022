@@ -109,12 +109,13 @@ main {
 
 #display_all_contacts {
   display: flex;
-  flex-grow: auto;
+  flex-grow: 1;
   gap: 20px;
   padding: 20px;
   justify-content: space-around;
   height: auto;
   flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 #display_all_contacts div {
